@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 requires = [ "hatchling" ]
 
 [project]
-name = "pyfxa"
+name = "pyfxa-mte"
 description = "Firefox Accounts client library for Python"
 readme = "README.rst"
 keywords = [
@@ -37,7 +37,7 @@ dependencies = [
   "requests>=2.4.2",
 ]
 
-urls.Homepage = "https://github.com/mozilla/PyFxA"
+urls.Homepage = "https://github.com/clarmso/PyFxA"
 scripts.fxa-client = "fxa.__main__:main"
 entry-points."httpie.plugins.auth.v1".httpie_fxa-bearer = "fxa.plugins.requests:FxABearerTokenPlugin"
 entry-points."httpie.plugins.auth.v1".httpie_fxa-browserid = "fxa.plugins.requests:FxABrowserIDPlugin"
